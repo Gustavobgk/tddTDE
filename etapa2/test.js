@@ -25,4 +25,10 @@ it('calcula desconto para valores acima de 1000 que são VIP', () => {
     const calculadora = new CalculadoraDescontoTradicionalTDD('VIP');
     expect(calculadora.realizarCompra(500)).to.equal(427.5);
   });
-   });
+
+  it('calcula valor para abaixo de 100', () => {
+    const calculadora = new CalculadoraDescontoTradicionalTDD('Padrão');
+    expect(calculadora.realizarCompra(100)).to.equal(115);
+    });
+}
+);
