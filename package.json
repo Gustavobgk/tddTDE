@@ -1,0 +1,23 @@
+{
+  "name": "tddmaxxing2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gustavobgk/tddTDE.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gustavobgk/tddTDE/issues"
+  },
+  "homepage": "https://github.com/Gustavobgk/tddTDE#readme",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "mocha": "^12.0.3"
+  }
+}

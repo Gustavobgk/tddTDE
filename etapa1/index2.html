@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mocha & Chai Browser Tests</title>
+  <!-- 1. Include Mocha's CSS for styling the test results page -->
+  <link rel="stylesheet" href="https://unpkg.com" />
+</head>
+<body>
+  <!-- 2. This div is where Mocha will output the test results -->
+  <div id="mocha"></div>
+
+  <!-- 3. Load Mocha and Chai from the CDN -->
+  <script src="https://unpkg.com"></script>
+  <script src="https://unpkg.com"></script>
+
+  <script>
+    // 4. Initialize Mocha and set up the interface (e.g., 'bdd' for describe/it)
+    mocha.setup('bdd');
+
+    // 5. Setup Chai's expect or assert interface
+    const expect = chai.expect;
+  </script>
+
+  <!-- 6. Write your tests here (or link an external script file) -->
+  <script>
+    // Example Application Code (The function we want to test)
+    function add(a, b) {
+      return a + b;
+    }
+
+    // Example Test Suite
+    describe('Math Application', function() {
+      it('should correctly add two numbers', function() {
+        expect(add(2, 3)).to.equal(5);
+      });
+
+      it('should fail intentionally if math is broken', function() {
+        expect(add(2, 2)).to.equal(5); 
+      });
+    });
+  </script>
+
+  <script>
+    // 7. Run the tests after everything is loaded
+    mocha.run();
+  </script>
+</body>
+</html>
